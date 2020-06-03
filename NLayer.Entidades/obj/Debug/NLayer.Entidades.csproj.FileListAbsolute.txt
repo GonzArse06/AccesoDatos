@@ -1,0 +1,5 @@
+C:\Users\p041218\source\Facu\NLayer\NLayer.Entidades\bin\Debug\NLayer.Entidades.dll
+C:\Users\p041218\source\Facu\NLayer\NLayer.Entidades\bin\Debug\NLayer.Entidades.pdb
+C:\Users\p041218\source\Facu\NLayer\NLayer.Entidades\obj\Debug\NLayer.Entidades.dll
+C:\Users\p041218\source\Facu\NLayer\NLayer.Entidades\obj\Debug\NLayer.Entidades.pdb
+C:\Users\p041218\source\Facu\NLayer\NLayer.Entidades\obj\Debug\NLayer.Entidades.csprojAssemblyReference.cache
