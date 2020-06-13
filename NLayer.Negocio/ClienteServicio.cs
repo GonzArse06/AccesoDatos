@@ -20,5 +20,22 @@ namespace NLayer.Negocio
             List<Cliente> result = mapper.TraerTodos();
             return result;
         }
+
+        public int InsertarCliente(string nombre, string apellido, string direccion)
+        {
+            Cliente cliente = new Cliente();
+            cliente.Ape = apellido;
+            cliente.Nombre = nombre;
+            cliente.Direccion = direccion;
+
+            TransactionResult resultante = mapper.Insert(cliente);
+
+            if (resultante.IsOk)
+                return resultante.Id;
+            else
+                throw new Exception("Hubo un error en la petición al servidor. Detalle: " + resultante.Error);
+
+
+        }
     }
 }

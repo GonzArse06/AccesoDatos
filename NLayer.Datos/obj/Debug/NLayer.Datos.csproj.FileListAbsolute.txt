@@ -8,3 +8,13 @@ C:\Users\p041218\source\Facu\NLayer\NLayer.Datos\bin\Debug\Newtonsoft.Json.xml
 C:\Users\p041218\source\Facu\NLayer\NLayer.Datos\obj\Debug\NLayer.Datos.csproj.CopyComplete
 C:\Users\p041218\source\Facu\NLayer\NLayer.Datos\obj\Debug\NLayer.Datos.dll
 C:\Users\p041218\source\Facu\NLayer\NLayer.Datos\obj\Debug\NLayer.Datos.pdb
+C:\Users\p041218\source\Facu\AccesoDatos\NLayer.Datos\bin\Debug\NLayer.Datos.dll
+C:\Users\p041218\source\Facu\AccesoDatos\NLayer.Datos\bin\Debug\NLayer.Datos.pdb
+C:\Users\p041218\source\Facu\AccesoDatos\NLayer.Datos\bin\Debug\Newtonsoft.Json.dll
+C:\Users\p041218\source\Facu\AccesoDatos\NLayer.Datos\bin\Debug\NLayer.Entidades.dll
+C:\Users\p041218\source\Facu\AccesoDatos\NLayer.Datos\bin\Debug\NLayer.Entidades.pdb
+C:\Users\p041218\source\Facu\AccesoDatos\NLayer.Datos\bin\Debug\Newtonsoft.Json.xml
+C:\Users\p041218\source\Facu\AccesoDatos\NLayer.Datos\obj\Debug\NLayer.Datos.csprojAssemblyReference.cache
+C:\Users\p041218\source\Facu\AccesoDatos\NLayer.Datos\obj\Debug\NLayer.Datos.csproj.CopyComplete
+C:\Users\p041218\source\Facu\AccesoDatos\NLayer.Datos\obj\Debug\NLayer.Datos.dll
+C:\Users\p041218\source\Facu\AccesoDatos\NLayer.Datos\obj\Debug\NLayer.Datos.pdb
