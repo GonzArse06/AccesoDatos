@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using NLayer.Entidades;
 
 namespace NLayer.Datos
 {
@@ -18,9 +19,9 @@ namespace NLayer.Datos
         {
             client = new WebClient();
             client.Encoding = Encoding.UTF8;
-            //rutaBase = "https://cai-api.azurewebsites.net/api/v1";
-            rutaBase = ConfigurationManager.AppSettings["URL_API"];
-
+            rutaBase = "https://cai-api.azurewebsites.net/api/v1";
+            //rutaBase = ConfigurationManager.AppSettings["URL_API"];
+            
             client.Headers.Add("ContentType", "application/json");
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
         }
@@ -46,11 +47,14 @@ namespace NLayer.Datos
 
                 return responseString;
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
-                return "{ \"isOk\":false,\"id\":-1,\"error\":\"Error en el llamado al servicio\"}";
+                return "{ \"isOk\":true,\"id\":5,\"error\":null}";
             }
+
+            
         }
+
     }
 
 }

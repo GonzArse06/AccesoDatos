@@ -3,8 +3,9 @@ C:\Users\p041218\source\Facu\NLayer\NLayer.Entidades\bin\Debug\NLayer.Entidades.
 C:\Users\p041218\source\Facu\NLayer\NLayer.Entidades\obj\Debug\NLayer.Entidades.dll
 C:\Users\p041218\source\Facu\NLayer\NLayer.Entidades\obj\Debug\NLayer.Entidades.pdb
 C:\Users\p041218\source\Facu\NLayer\NLayer.Entidades\obj\Debug\NLayer.Entidades.csprojAssemblyReference.cache
-C:\Users\p041218\source\Facu\AccesoDatos\NLayer.Entidades\bin\Debug\NLayer.Entidades.dll
-C:\Users\p041218\source\Facu\AccesoDatos\NLayer.Entidades\bin\Debug\NLayer.Entidades.pdb
-C:\Users\p041218\source\Facu\AccesoDatos\NLayer.Entidades\obj\Debug\NLayer.Entidades.csprojAssemblyReference.cache
-C:\Users\p041218\source\Facu\AccesoDatos\NLayer.Entidades\obj\Debug\NLayer.Entidades.dll
-C:\Users\p041218\source\Facu\AccesoDatos\NLayer.Entidades\obj\Debug\NLayer.Entidades.pdb
+C:\Facu\facu\Facu\NLayer\NLayer.Entidades\bin\Debug\NLayer.Entidades.dll
+C:\Facu\facu\Facu\NLayer\NLayer.Entidades\bin\Debug\NLayer.Entidades.pdb
+C:\Facu\facu\Facu\NLayer\NLayer.Entidades\obj\Debug\NLayer.Entidades.csprojAssemblyReference.cache
+C:\Facu\facu\Facu\NLayer\NLayer.Entidades\obj\Debug\NLayer.Entidades.csproj.CoreCompileInputs.cache
+C:\Facu\facu\Facu\NLayer\NLayer.Entidades\obj\Debug\NLayer.Entidades.dll
+C:\Facu\facu\Facu\NLayer\NLayer.Entidades\obj\Debug\NLayer.Entidades.pdb

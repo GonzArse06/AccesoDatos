@@ -14,7 +14,7 @@ namespace NLayer.Datos
     {
         public List<Cliente> TraerTodos()
         {
-            string json2 = WebHelper.Get("/api/v1/cliente"); // trae un texto en formato json de una web
+            string json2 = WebHelper.Get("/cliente"); // trae un texto en formato json de una web
             List<Cliente> resultado = MapList(json2);
             return resultado;
         }
@@ -22,9 +22,9 @@ namespace NLayer.Datos
         public TransactionResult Insert(Cliente cliente)
         {
             NameValueCollection obj = ReverseMap(cliente);
-
-            string result = WebHelper.Post("/api/v1/cliente", obj);
-
+            
+            string result = WebHelper.Post("/cliente", obj);
+            
             TransactionResult resultadoTransaccion = MapResultado(result);
 
             return resultadoTransaccion;
@@ -55,5 +55,18 @@ namespace NLayer.Datos
             TransactionResult lst = JsonConvert.DeserializeObject<TransactionResult>(json);
             return lst;
         }
+
+
+        //private Cliente MapObj(string json)
+        //{
+        //    var lst = JsonConvert.DeserializeObject<Cliente>(json);
+        //    return lst;
+        //}
+        //public Cliente TraerPorCodigo(int codigo)
+        //{
+        //    string json2 = WebHelper.Get("/api/v1/cliente/" + codigo.ToString()); // trae un texto en formato json de una web
+        //    Cliente resultado = MapObj(json2);
+        //    return resultado;
+        //}
     }
 }

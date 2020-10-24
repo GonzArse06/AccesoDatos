@@ -13,6 +13,12 @@ namespace NLayer.Entidades
         private string _nombre;
         private string _apellido;
         private string _direccion;
+        
+        
+        private int _id;
+
+        [DataMember]
+        public int Id { get => _id; set => _id = value; }
 
         [DataMember]
         public string Nombre { get => _nombre; set => _nombre = value; }

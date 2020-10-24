@@ -16,13 +16,13 @@ namespace NLayer.Consola
             {
                 ClienteServicio servicio = new ClienteServicio();
 
-                int cod = servicio.InsertarCliente("TEST NOMBRE", "TEST APELLIDO", "TEST DIRECCION");
+                int cod = servicio.InsertarCliente("Josefina", "Alberdi", "Rios 1122");
 
-                Console.WriteLine("Se ha insertado el cliente nro " + cod.ToString());
+                Console.WriteLine("Se ha insertado el cliente nro "+ cod.ToString());
 
                 List<Cliente> lst = servicio.TraerClientes();
 
-                foreach (Cliente c in lst)
+                foreach(Cliente c in lst)
                 {
                     Console.WriteLine(c);
                 }
@@ -33,8 +33,6 @@ namespace NLayer.Consola
 
                 Console.WriteLine(ex);
             }
-
-
         }
     }
 }
