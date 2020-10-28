@@ -9,3 +9,9 @@ C:\Facu\facu\Facu\NLayer\NLayer.Entidades\obj\Debug\NLayer.Entidades.csprojAssem
 C:\Facu\facu\Facu\NLayer\NLayer.Entidades\obj\Debug\NLayer.Entidades.csproj.CoreCompileInputs.cache
 C:\Facu\facu\Facu\NLayer\NLayer.Entidades\obj\Debug\NLayer.Entidades.dll
 C:\Facu\facu\Facu\NLayer\NLayer.Entidades\obj\Debug\NLayer.Entidades.pdb
+C:\Users\gcarranza\Documents\GitHub\AccesoDatos\NLayer.Entidades\bin\Debug\NLayer.Entidades.dll
+C:\Users\gcarranza\Documents\GitHub\AccesoDatos\NLayer.Entidades\bin\Debug\NLayer.Entidades.pdb
+C:\Users\gcarranza\Documents\GitHub\AccesoDatos\NLayer.Entidades\obj\Debug\NLayer.Entidades.csprojAssemblyReference.cache
+C:\Users\gcarranza\Documents\GitHub\AccesoDatos\NLayer.Entidades\obj\Debug\NLayer.Entidades.csproj.CoreCompileInputs.cache
+C:\Users\gcarranza\Documents\GitHub\AccesoDatos\NLayer.Entidades\obj\Debug\NLayer.Entidades.dll
+C:\Users\gcarranza\Documents\GitHub\AccesoDatos\NLayer.Entidades\obj\Debug\NLayer.Entidades.pdb

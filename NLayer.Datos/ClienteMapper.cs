@@ -12,6 +12,7 @@ namespace NLayer.Datos
 {
     public class ClienteMapper
     {
+        const string numeroRegistro = "852017";
         public List<Cliente> TraerTodos()
         {
             string json2 = WebHelper.Get("/cliente"); // trae un texto en formato json de una web
@@ -39,14 +40,17 @@ namespace NLayer.Datos
         private NameValueCollection ReverseMap(Cliente cliente)
         {
             NameValueCollection n = new NameValueCollection();
+            
             n.Add("Nombre", cliente.Nombre);
             n.Add("Apellido", cliente.Ape);
-            n.Add("Direccion", cliente.Direccion);
-            n.Add("Usuario", ConfigurationManager.AppSettings["Legajo"]);
-            //n.Add("Email", cliente.Email); // STRING
-            //n.Add("Telefono", cliente.Telefono.ToString()); // INT
-            //n.Add("FechaNacimiento", cliente.FechaNacimiento.ToShortDateString()); // DateTime
-            //n.Add("Activo", cliente.Activo.ToString()); // bool
+            n.Add("Direccion", cliente.Direccion);                        
+            n.Add("Email", cliente.email); // STRING
+            n.Add("Telefono", cliente.Telefono.ToString()); // INT
+            n.Add("FechaNacimiento", cliente.FechaNacimiento.ToShortDateString()); // DateTime
+            n.Add("Activo", cliente.Activo.ToString()); // bool
+            n.Add("Dni", cliente.Dni);
+            //n.Add("Usuario", ConfigurationManager.AppSettings["Legajo"]);
+            n.Add("Usuario", numeroRegistro);
             return n;
         }
 

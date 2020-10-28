@@ -52,6 +52,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmAltaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAltaCliente.Designer.cs">
+      <DependentUpon>FrmAltaCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmInicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,16 +70,28 @@
     <Compile Include="FrmListaClientes.Designer.cs">
       <DependentUpon>FrmListaClientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmListarCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListarCuentas.Designer.cs">
+      <DependentUpon>FrmListarCuentas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAltaCliente.resx">
+      <DependentUpon>FrmAltaCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmInicio.resx">
       <DependentUpon>FrmInicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmListaClientes.resx">
       <DependentUpon>FrmListaClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListarCuentas.resx">
+      <DependentUpon>FrmListarCuentas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -84,6 +102,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Properties\DataSources\NLayer.Entidades.Cliente.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -29,3 +29,10 @@ C:\Facu\facu\Facu\NLayer\NLayer.Consola\obj\Debug\NLayer.Consola.csproj.CoreComp
 C:\Facu\facu\Facu\NLayer\NLayer.Consola\obj\Debug\NLayer.Consola.csproj.CopyComplete
 C:\Facu\facu\Facu\NLayer\NLayer.Consola\obj\Debug\NLayer.Consola.exe
 C:\Facu\facu\Facu\NLayer\NLayer.Consola\obj\Debug\NLayer.Consola.pdb
+C:\Users\gcarranza\Documents\GitHub\AccesoDatos\NLayer.Consola\bin\Debug\NLayer.Consola.exe.config
+C:\Users\gcarranza\Documents\GitHub\AccesoDatos\NLayer.Consola\bin\Debug\NLayer.Consola.exe
+C:\Users\gcarranza\Documents\GitHub\AccesoDatos\NLayer.Consola\bin\Debug\NLayer.Consola.pdb
+C:\Users\gcarranza\Documents\GitHub\AccesoDatos\NLayer.Consola\obj\Debug\NLayer.Consola.csprojAssemblyReference.cache
+C:\Users\gcarranza\Documents\GitHub\AccesoDatos\NLayer.Consola\obj\Debug\NLayer.Consola.csproj.CoreCompileInputs.cache
+C:\Users\gcarranza\Documents\GitHub\AccesoDatos\NLayer.Consola\obj\Debug\NLayer.Consola.exe
+C:\Users\gcarranza\Documents\GitHub\AccesoDatos\NLayer.Consola\obj\Debug\NLayer.Consola.pdb

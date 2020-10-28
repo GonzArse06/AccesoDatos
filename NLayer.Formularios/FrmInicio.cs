@@ -12,6 +12,7 @@ namespace NLayer.Formularios
 {
     public partial class FrmInicio : Form
     {
+        private Form formulario;
         public FrmInicio()
         {
             InitializeComponent();
@@ -19,10 +20,22 @@ namespace NLayer.Formularios
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FrmListaClientes forumulario = new FrmListaClientes();
-            forumulario.Owner = this;
-            forumulario.Show();
+            formulario = new FrmListaClientes();
+            formulario.Owner = this;
+            formulario.Show();
             this.Hide();
+        }
+
+        private void btnIngresarCliente_Click(object sender, EventArgs e)
+        {
+            formulario = new FrmAltaCliente();
+            formulario.ShowDialog();
+        }
+
+        private void btnListarCuentas_Click(object sender, EventArgs e)
+        {
+            formulario = new FrmListarCuentas();
+            formulario.ShowDialog();
         }
     }
 }

@@ -3,6 +3,7 @@ using NLayer.Entidades;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -34,7 +35,7 @@ namespace NLayer.Negocio
             
         }
 
-        public int InsertarCliente(string nombre, string apellido, string direccion)
+        public int InsertarCliente(string dni, string nombre, string apellido, string direccion, string email, string telefono, DateTime fechaNacimiento)
         {
             // antes validar con el get si existe ese dni/apellido-nombre
             List<Cliente> result = mapper.TraerTodos();
@@ -43,6 +44,11 @@ namespace NLayer.Negocio
             cliente.Ape = apellido;
             cliente.Nombre = nombre;
             cliente.Direccion = direccion;
+            cliente.Dni = dni;
+            cliente.email = email;
+            cliente.Telefono = telefono;
+            cliente.FechaNacimiento = fechaNacimiento;
+            cliente.Activo = true;
 
             foreach (var item in result)
             {
@@ -57,7 +63,6 @@ namespace NLayer.Negocio
                 return resultante.Id;
             //return TraerClientesPorId(resultante.Id);
             else
-
                 throw new Exception("Hubo un error en la petición al servidor. Detalle: " + resultante.Error);
             
             

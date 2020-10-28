@@ -35,9 +35,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(525, 295);
+            this.button1.Location = new System.Drawing.Point(358, 244);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(141, 80);
+            this.button1.Size = new System.Drawing.Size(139, 84);
             this.button1.TabIndex = 0;
             this.button1.Text = "VOLVER";
             this.button1.UseVisualStyleBackColor = true;
@@ -45,9 +46,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(471, 132);
+            this.button2.Location = new System.Drawing.Point(358, 156);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(104, 65);
+            this.button2.Size = new System.Drawing.Size(139, 80);
             this.button2.TabIndex = 1;
             this.button2.Text = "TRAER CLIENTES";
             this.button2.UseVisualStyleBackColor = true;
@@ -56,21 +58,25 @@
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(146, 130);
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Location = new System.Drawing.Point(26, 52);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(214, 225);
+            this.listBox1.Size = new System.Drawing.Size(284, 276);
             this.listBox1.TabIndex = 2;
             // 
             // FrmListaClientes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(526, 376);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmListaClientes";
             this.Text = "FrmListaClientes";
+            this.Load += new System.EventHandler(this.FrmListaClientes_Load);
             this.ResumeLayout(false);
 
         }

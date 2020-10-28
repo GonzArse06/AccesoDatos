@@ -18,7 +18,6 @@ namespace NLayer.Formularios
         public FrmListaClientes()
         {
             InitializeComponent();
-
             _clienteServicio = new ClienteServicio();
         }
 
@@ -31,10 +30,13 @@ namespace NLayer.Formularios
         private void button2_Click(object sender, EventArgs e)
         {
             List<Cliente> lst = _clienteServicio.TraerClientes();
-
             listBox1.DataSource = null;
-
             listBox1.DataSource = lst;
+        }
+
+        private void FrmListaClientes_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
