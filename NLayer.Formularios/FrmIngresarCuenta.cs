@@ -60,9 +60,13 @@ namespace NLayer.Formularios
             }
 
             //limpio controles
-            //foreach (Control a in Controls) -> limpia labels jaja Revisar
-            //    a.Text = "";
-            limpiarControles();
+            foreach (Control a in Controls)
+            { 
+                if(a is TextBox)
+                    a.Text= "";
+
+            }
+            // limpiarControles();
         }
         private void limpiarControles()
         {

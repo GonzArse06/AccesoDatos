@@ -56,7 +56,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(23, 56);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 21);
+            this.label1.Size = new System.Drawing.Size(66, 17);
             this.label1.TabIndex = 2;
             this.label1.Text = "Id Cliente";
             // 
@@ -117,17 +117,16 @@
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tlblFooter});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 226);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 230);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(527, 26);
+            this.statusStrip1.Size = new System.Drawing.Size(527, 22);
             this.statusStrip1.TabIndex = 15;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // tlblFooter
             // 
             this.tlblFooter.Name = "tlblFooter";
-            this.tlblFooter.Size = new System.Drawing.Size(45, 20);
-            this.tlblFooter.Text = "Texto";
+            this.tlblFooter.Size = new System.Drawing.Size(0, 16);
             // 
             // FrmIngresarCuenta
             // 

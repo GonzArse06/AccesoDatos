@@ -43,5 +43,16 @@ namespace NLayer.Formularios
             formulario = new FrmIngresarCuenta();
             formulario.ShowDialog();
         }
+
+        private void FrmInicio_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Esta seguro de que desea cerrar la aplicacion", "Salir", MessageBoxButtons.YesNo) == DialogResult.No)
+                e.Cancel = true;
+        }
+
+        private void btnAcercade_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

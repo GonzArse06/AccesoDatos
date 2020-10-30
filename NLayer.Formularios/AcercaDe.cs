@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace NLayer.Formularios
 {
-    public partial class Form1 : Form
+    public partial class AcercaDe : Form
     {
-        public Form1()
+        public AcercaDe()
         {
             InitializeComponent();
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void AcercaDe_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
