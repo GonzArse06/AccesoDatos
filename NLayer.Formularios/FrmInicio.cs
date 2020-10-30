@@ -37,5 +37,11 @@ namespace NLayer.Formularios
             formulario = new FrmListarCuentas();
             formulario.ShowDialog();
         }
+
+        private void btnIngresarCuenta_Click(object sender, EventArgs e)
+        {
+            formulario = new FrmIngresarCuenta();
+            formulario.ShowDialog();
+        }
     }
 }

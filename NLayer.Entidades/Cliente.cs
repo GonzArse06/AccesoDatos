@@ -39,6 +39,8 @@ namespace NLayer.Entidades
         public DateTime FechaNacimiento { get => _fechaNacimiento; set => _fechaNacimiento = value; }
         public bool Activo { get => _activo; set => _activo = value; }
 
+        public string NombreCompleto { get => _apellido + " - " + _nombre; }
+
 
         public override string ToString()
         {

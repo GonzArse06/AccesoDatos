@@ -15,7 +15,8 @@ namespace NLayer.Datos
         const string numeroRegistro = "852017";
         public List<Cliente> TraerTodos()
         {
-            string json2 = WebHelper.Get("/cliente"); // trae un texto en formato json de una web
+            string json2 = WebHelper.Get("/cliente/"+ConfigurationManager.AppSettings["Legajo"]); // trae un texto en formato json de una web
+            //string json2 = WebHelper.Get("/cliente/");
             List<Cliente> resultado = MapList(json2);
             return resultado;
         }
@@ -49,8 +50,8 @@ namespace NLayer.Datos
             n.Add("FechaNacimiento", cliente.FechaNacimiento.ToShortDateString()); // DateTime
             n.Add("Activo", cliente.Activo.ToString()); // bool
             n.Add("Dni", cliente.Dni);
-            //n.Add("Usuario", ConfigurationManager.AppSettings["Legajo"]);
-            n.Add("Usuario", numeroRegistro);
+            n.Add("Usuario", ConfigurationManager.AppSettings["Legajo"]);
+            //n.Add("Usuario", numeroRegistro);
             return n;
         }
 

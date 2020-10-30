@@ -21,24 +21,33 @@ namespace NLayer.Negocio
         {
             return mapper.TraerTodo();
         }
-        public int IngresarCuenta(int nroCuenta, string descripcion, double saldo, DateTime fechaApertura,int idCliente)
+        public int IngresarCuenta( string descripcion, int idCliente)
         {
             List<Cuenta> lstCuentas = mapper.TraerTodo();
+                   
 
             Cuenta nuevaCuenta = new Cuenta();
-            nuevaCuenta.NroCuenta = nroCuenta;
+            //nuevaCuenta.NroCuenta = nroCuenta;
             nuevaCuenta.Descripcion = descripcion;
-            nuevaCuenta.Saldo = saldo;
-            nuevaCuenta.FechaApertura = fechaApertura;
-            nuevaCuenta.FechaModificacion = DateTime.Now;
-            nuevaCuenta.Activo = true;
+            //nuevaCuenta.Saldo = saldo;
+            //nuevaCuenta.FechaApertura = fechaApertura;
+            //nuevaCuenta.FechaModificacion = DateTime.Now;
+            //nuevaCuenta.Activo = true;
             nuevaCuenta.IdCliente = idCliente;
 
-            TransactionResult resultado = mapper.Insert(nuevaCuenta);
-            if (resultado.IsOk)
-                return resultado.Id;
+            //Valido que no tenga cuenta cargada.
+            Cuenta cuenta = lstCuentas.FirstOrDefault(x => x.IdCliente == idCliente);
+            if (cuenta != null)
+                throw new Exception("El cliente ya tiene una cuenta cargada. intente con otro.");
             else
-                throw new Exception("No se pudo finalizar el insert");
+            { 
+                TransactionResult resultado = mapper.Insert(nuevaCuenta);
+                //int nroCuenta = mapper.TraerPorID()
+                if (resultado.IsOk)
+                    return resultado.Id;
+                else
+                    throw new Exception(resultado.Error);
+            }
         }
 
     }

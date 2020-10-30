@@ -76,6 +76,7 @@
             this.btnIngresarCuenta.TabIndex = 5;
             this.btnIngresarCuenta.Text = "INGRESAR CUENTA";
             this.btnIngresarCuenta.UseVisualStyleBackColor = true;
+            this.btnIngresarCuenta.Click += new System.EventHandler(this.btnIngresarCuenta_Click);
             // 
             // btnListarCuentas
             // 
@@ -92,7 +93,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(702, 417);
+            this.ClientSize = new System.Drawing.Size(702, 302);
             this.Controls.Add(this.btnIngresarCuenta);
             this.Controls.Add(this.btnListarCuentas);
             this.Controls.Add(this.btnIngresarCliente);

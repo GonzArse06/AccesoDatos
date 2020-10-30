@@ -18,8 +18,14 @@ namespace NLayer.Datos
             string json = WebHelper.Get("/cuenta");
             List<Cuenta> retorno = MapList(json);
             return retorno;
-
         }
+
+        public Cuenta TraerPorID(int id)
+        {
+            string json = WebHelper.Get("/cuenta/" + id);
+            return JsonConvert.DeserializeObject<Cuenta>(json);
+        }
+
         private List<Cuenta> MapList(string json)
         {
             List<Cuenta> retorno = JsonConvert.DeserializeObject<List<Cuenta>>(json);
@@ -39,12 +45,12 @@ namespace NLayer.Datos
         {
             NameValueCollection n = new NameValueCollection();
 
-            n.Add("NroCuenta", cuenta.NroCuenta.ToString());
-            n.Add("Descripcion", cuenta.Descripcion);
-            n.Add("Saldo", cuenta.Saldo.ToString());
-            n.Add("FechaApertura", cuenta.FechaApertura.ToString());
-            n.Add("FechaModificacion", cuenta.FechaModificacion.ToString());
-            n.Add("Activo", cuenta.Activo.ToString()); 
+            //n.Add("nroCuenta", cuenta.NroCuenta.ToString());
+            n.Add("descripcion", cuenta.Descripcion);
+            //n.Add("saldo", cuenta.Saldo.ToString());
+            //n.Add("fechaApertura", cuenta.FechaApertura.ToString());
+            //n.Add("fechaModificacion", cuenta.FechaModificacion.ToString());
+            //n.Add("activo", cuenta.Activo.ToString()); 
             n.Add("idCliente", cuenta.IdCliente.ToString());
             return n;
         }

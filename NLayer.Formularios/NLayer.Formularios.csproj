@@ -58,6 +58,18 @@
     <Compile Include="FrmAltaCliente.Designer.cs">
       <DependentUpon>FrmAltaCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmBuscarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBuscarCliente.Designer.cs">
+      <DependentUpon>FrmBuscarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIngresarCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIngresarCuenta.Designer.cs">
+      <DependentUpon>FrmIngresarCuenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmInicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +95,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAltaCliente.resx">
       <DependentUpon>FrmAltaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBuscarCliente.resx">
+      <DependentUpon>FrmBuscarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIngresarCuenta.resx">
+      <DependentUpon>FrmIngresarCuenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmInicio.resx">
       <DependentUpon>FrmInicio.cs</DependentUpon>
